@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+        <title>Eu vou virar Dev</title>
+        <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+
+        <!-- Script para manipular os botões -->
+        <script type="text/javascript">
+
+            // Botão 1 - EU
+            function loadBtn1(){
+                label = document.querySelector("#word1");
+
+                if(label.style.visibility == "visible") {
+                    label.style.visibility = "hidden";
+                } else {
+                    label.style.visibility = "visible";
+                }
+            } 
+            
+            // Botão 2 - Vou
+            function loadBtn2(){
+                label = document.querySelector("#word2");
+                if(label.style.visibility == 'visible') {
+                    label.style.visibility = 'hidden';
+                } else {
+                    label.style.visibility = 'visible'
+                }
+            }
+
+            // Botão 3 - Virar
+            function loadBtn3(){
+                label = document.querySelector("#word3");
+
+                if(label.style.visibility == 'visible') {
+                    label.style.visibility = 'hidden';
+                } else {
+                    label.style.visibility = 'visible';
+                }
+                
+            }
+
+            // Botão 4 - Dev
+            function loadBtn4(){
+                label = document.querySelector("#word4");
+
+                if(label.style.visibility == 'visible') {
+                    label.style.visibility = 'hidden';
+                } else {
+                    label.style.visibility = 'visible';
+                }
+                
+            }
+
+            // Outro modo de fazer
+            /*window.onload = function(){
+                document.querySelector("#btn1").addEventListener("click", function(){
+                    if(document.querySelector("#word1").style.visibility == 'visible') {
+                        document.querySelector("#word1").style.visibility = 'hidden';
+                    }
+                    else {
+                        document.querySelector("#word1").style.visibility = 'visible';
+                    }
+                });
+            };*/
+        </script>
+    </head>
+    <body>
+        <section id="panel">
+            <div class="container">
+                <article id="area_desafio">
+                    <div class="itens">
+                        <h1>Desafio #1 - Descobrindo a Palavra</h1>
+                    </div>
+                    <div class="itens column">
+                        <button onclick="loadBtn1();" id="btn1" class="btn_revela btn_green" >
+                            Botão 1
+                        </button>
+                        <button onclick="loadBtn2();" id="btn2" class="btn_revela btn_yellow">
+                            Botão 2
+                        </button>
+                        <button onclick="loadBtn3();" id="btn3" class="btn_revela btn_blue">
+                            Botão 3
+                        </button>
+                        <button onclick="loadBtn4();" id="btn4" class="btn_revela btn_red">
+                            Botão 4
+                        </button>
+                    </div>
+                    <div class="itens">
+                        <div class="hide">
+                            <h2 id="word1">Eu</h2>
+                        </div>
+                        <div class="hide">
+                            <h2 id="word2">Vou</h2>
+                        </div>
+                        <div class="hide">
+                            <h2 id="word3">Virar</h2>
+                        </div>
+                        <div class="hide">
+                            <h2 id="word4">Dev</h2>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </body>
+</html>
